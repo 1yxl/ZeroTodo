@@ -29,6 +29,7 @@ const createUIElem = (title, done) => {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   const titl = document.createElement("h2");
+
   const delBtn = document.createElement("button");
   delBtn.classList.add("fas", "fa-trash", "delete-btn");
   return [todoContainer, checkbox, titl, delBtn];

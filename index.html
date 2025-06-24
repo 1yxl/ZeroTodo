@@ -11,18 +11,31 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <input type="text" name="" id="inpt" />
-      <button id="addBtn">+</button>
-      <button id="clearBtn">x</button>
+    <div class="todo-app">
+      <header class="header">
+        <div class="header-top-row">
+          <h1 class="current-time">Today</h1>
+          <button id="clearBtn">Clear all</button>
+        </div>
+
+        <div class="selections">
+          <button id="allBtn">All</button>
+          <button id="activeBtn">Active</button>
+          <button id="completeBtn">Completed ✅</button>
+        </div>
+      </header>
+
+      <div class="todos">
+        <!-- Todo items will be dynamically inserted here by main.js using the structure above -->
+      </div>
+      <footer class="footer">
+        <div class="task-input">
+          <input type="text" id="inpt" placeholder="Add a new task" />
+          <button id="addBtn">+</button>
+        </div>
+      </footer>
     </div>
 
-    <div class="container">
-      <button id="allBtn">All</button>
-      <button id="activeBtn">Active</button>
-      <button id="completeBtn">Complete</button>
-    </div>
-    <div class="todos"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

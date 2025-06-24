@@ -7,5 +7,15 @@ const todos = $(".todos");
 const activeBtn = $("#activeBtn");
 const completeBtn = $("#completeBtn");
 const allBtn = $("#allBtn");
+const timeh1 = $(".current-time");
 
-export { addBtn, clearBtn, inputTitle, todos, activeBtn, completeBtn, allBtn };
+export {
+  addBtn,
+  clearBtn,
+  inputTitle,
+  todos,
+  activeBtn,
+  completeBtn,
+  allBtn,
+  timeh1,
+};

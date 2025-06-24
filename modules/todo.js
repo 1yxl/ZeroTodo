@@ -1,5 +1,6 @@
 import { getTodoData, storeTodoData } from "./storage.js";
 import { renderUI } from "./ui.js";
+import { todos } from "./elements.js";
 
 export const filterActive = () => {
   todos.innerHTML = "";

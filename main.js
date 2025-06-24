@@ -10,6 +10,7 @@ import {
   allBtn,
 } from "./modules/elements.js";
 import { filterActive, filterCompleted } from "./modules/todo.js";
+import { initTime } from "./modules/time.js";
 
 const addToUI = () => {
   const tit = inputTitle.value.trim();
@@ -35,6 +36,9 @@ clearBtn.addEventListener("click", () => {
   loadUIData();
 });
 
+console.log(activeBtn);
 activeBtn.addEventListener("click", filterActive);
 completeBtn.addEventListener("click", filterCompleted);
 allBtn.addEventListener("click", loadUIData);
+
+initTime();
